@@ -706,8 +706,8 @@ require('lazy').setup({
       },
     },
   },
-
-  { -- Autocompletion
+  require('nvim-treesitter.install').prefer_git == false,
+  -- Autocompletion
     'hrsh7th/nvim-cmp',
     event = 'InsertEnter',
     dependencies = {
