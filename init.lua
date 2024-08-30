@@ -238,7 +238,7 @@ require('lazy').setup({
 
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
-
+  { 'github/copilot.vim' },
   -- Here is a more advanced example where we pass configuration
   -- options to `gitsigns.nvim`. This is equivalent to the following Lua:
   --    require('gitsigns').setup({ ... })
@@ -291,7 +291,7 @@ require('lazy').setup({
       require('orgmode').setup {
         org_agenda_files = 'C:/Users/Aminas/orgfiles/**/*',
         org_default_notes_file = 'C:/Users/Aminas/orgfiles/refile.org',
-        org_todo_keywords = {'TODO(t)', '|', 'DONE(d)'},
+        org_todo_keywords = { 'TODO(t)', '|', 'DONE(d)' },
       }
 
       -- NOTE: If you are using nvim-treesitter with ~ensure_installed = "all"~ option
