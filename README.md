@@ -10,6 +10,40 @@ A starting point for Neovim that is:
 
 **NOT** a Neovim distribution, but instead a starting point for your configuration.
 
+## Plugins
+
+- **which-key**: Shows pending keybinds.
+- **illuminate**: Highlights references to the word under cursor.
+- **surround**: Provides mappings to surround text with brackets, quotes, etc.
+- **toggleterm**: Toggles a terminal window.
+- **trouble**: Pretty list for diagnostics, references, quickfix, etc.
+- **harpoon**: Marks files for quick navigation.
+- **bufferline**: Shows buffers as tabs with diagnostics.
+- **lualine**: Status line plugin.
+- **mini**: Collection of small plugins like textobjects, surround, statusline.
+- **fugitive**: Git integration.
+- **treesitter**: Highlights, edits, and navigates code.
+- **todo-comments**: Highlights TODOs in comments.
+- **tokyonight**: Colorscheme.
+- **nvim-cmp**: Autocompletion with snippets.
+- **conform**: Autoformats code.
+- **lspconfig**: LSP configuration for language servers.
+- **telescope**: Fuzzy finder for files, LSP, etc.
+- **orgmode**: Org mode for Neovim.
+- **dashboard**: Fancy dashboard.
+- **nvim-tree**: File explorer.
+- **gitsigns**: Git signs in gutter and change management.
+- **copilot**: AI-powered code completion.
+- **comment**: Comment visual regions/lines with gc.
+- **rustaceanvim**: Rust development tools.
+- **wakatime**: Time tracking for coding.
+- **vim-sleuth**: Detects tabstop and shiftwidth.
+- **autopairs**: Auto-pairs brackets and quotes.
+- **debug**: DAP debugging, focused on Go.
+- **indent_line**: Indentation guides on blank lines.
+- **lint**: Linting with nvim-lint.
+- **neo-tree**: File system browser.
+
 ## Installation
 
 ### Install Neovim
