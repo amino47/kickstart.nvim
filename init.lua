@@ -85,13 +85,15 @@ P.S. You can delete this when you're done too. It's your config now! :)
 --]]
 
 -- Set <space> as the leader key
+-- Ensure Neovim version is recent
+assert(vim.fn.has('nvim-0.9') == 1, 'Neovim 0.9+ required')
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
-vim.g.have_nerd_font = true
+vim.g.have_nerd_font = (vim.fn.executable('fc-list') == 1 and #vim.fn.systemlist('fc-list | grep -i "nerd"') > 0)
 -- [[ Setting options ]]
 -- See `:help vim.opt`
 -- NOTE: You can change these options as you wish!
@@ -101,7 +103,7 @@ vim.g.have_nerd_font = true
 vim.opt.number = true
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
--- vim.opt.relativenumber = true
+vim.opt.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
@@ -113,6 +115,7 @@ vim.opt.showmode = false
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
 vim.opt.clipboard = 'unnamedplus'
+vim.opt.shadafile = vim.fn.stdpath('cache') .. '/shada'
 
 -- Enable break indent
 vim.opt.breakindent = true
@@ -132,6 +135,7 @@ vim.opt.updatetime = 250
 
 -- Decrease mapped sequence wait time
 -- Displays which-key popup sooner
+vim.opt.timeout = true
 vim.opt.timeoutlen = 300
 
 -- Configure how new splits should be opened
@@ -152,6 +156,7 @@ vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
+vim.opt.completeopt = {'menuone', 'noselect'}
 
 require('keymaps')
 
