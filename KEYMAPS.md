@@ -120,3 +120,4 @@
 - **<leader>gd**: Git diff
 - **<leader>gr**: Git read (checkout)
 - **<leader>gw**: Git write (add)
+- **<leader>hh**: Health check
